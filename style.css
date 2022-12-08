@@ -291,7 +291,10 @@ nav .icon{
     nav .icon{
         display: block;
         font-size: 25px;
+      
     }
+
+
 
     nav ul{
         background: #ff004f; /*color to change later?*/
