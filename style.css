@@ -1,3 +1,14 @@
+/*
+colors used:
+
+background: #080808
+text default: #fff
+tint: #ff004f
+off color tint:#b54769
+*/
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +24,21 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png); /* change background image later*/
+    /*background-image: url(images/background.png); /* change background image later*/
     background-size: cover;
     background-position: center;
+}
+
+@media only screen and (min-width: 600px){
+
+#sidemenu{
+    padding: 10px 16px;
+    background: #080808;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
 }
 
 .container{
@@ -51,7 +74,7 @@ nav ul li a::after{
     content: "";
     width: 0; /*start underline un-hovered*/
     height: 3px;
-    background: #ff004f; /*underline color, change later? */
+    background: #007afc; /*underline color, change later? */
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -73,7 +96,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f; /*color text name, change later?*/
+    color: #007afc; /*color text name, change later?*/
 }
 
 /*--------------about--------------*/
@@ -125,7 +148,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #ff004f; /*underline color, change later? */
+    background: #007afc; /*underline color, change later? */
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -142,7 +165,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769; /*color text sloghtly less saturated and bright, change later?*/
+    color: #0087a0; /*color text sloghtly less saturated and bright, change later?*/
     font-size: 18px;
 }
 
@@ -183,7 +206,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f); /*color to change later?*/
+    background: linear-gradient(rgba(0,0,0,0.6), #007afc); /*color to change later?*/
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -207,7 +230,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20%;
-    color: #ff004f; /*color to change later?*/
+    color: #007afc; /*color to change later?*/
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -230,7 +253,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 4px solid #ff004f; /*color to change later?*/
+    border: 4px solid #007afc; /*color to change later?*/
     padding:  14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -239,7 +262,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #007afc;
 }
 
 /*-------------------css for small screens-------------------*/
@@ -256,14 +279,14 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #007afc;
     margin-right: 15px;
     font-size: 25px;
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #007afc;
     height: 50px;
 }
 
@@ -276,7 +299,7 @@ nav .icon{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(/images/phone-background.png);
+        /*background-image: url(/images/phone-background.png);*/
     }
 
     .header-text{
@@ -291,13 +314,22 @@ nav .icon{
     nav .icon{
         display: block;
         font-size: 25px;
-      
+        position: relative;
     }
 
+    nav .icon.open{
+        padding-left: 90%;
+        padding-top: 10%;
+    }
 
+    nav .cion.close{
+        padding-top: 100%;
+    }
+  
+    
 
     nav ul{
-        background: #ff004f; /*color to change later?*/
+        background: #007afc; /*color to change later?*/
         position: fixed;
         top: 0;
         right: -200px;
