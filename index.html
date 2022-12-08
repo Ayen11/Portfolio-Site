@@ -45,11 +45,32 @@
                 </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
                 </div>
-                <div class="tab-contents"></div>
+                <!--Skills-->
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <!--experience-->
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>March 2020 - current</span><br>Solo Indie Dev</li>
+                        <li><span>June 2020 - December 2020</span><br>Longboard Skate School Instructor</li>
+                        <li><span>Spetemeber 2019 - june 2020</span><br>National Service School Support Staff</li>
+                    </ul>
+                </div>
+                <!--education-->
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Entirely Self Taught</span><br>Through trial and error and whatever sources I could find online</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
