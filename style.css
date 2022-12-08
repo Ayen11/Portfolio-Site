@@ -89,7 +89,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-.about-col-1{           /*some fuckery from here to line 103*/
+.about-col-1{
     flex-basis: 35%;
 }
 
@@ -100,4 +100,4 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 60%;
-} 
+}
