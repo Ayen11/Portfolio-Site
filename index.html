@@ -12,13 +12,15 @@
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo"> <!-- change logo later -->
-            <ul>
+            <ul id="side menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <!--<li><a href="#">Services</a></li>--> 
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="icon fa-regular fa-circle-xmark" onclick="closemenu()">close</i>
             </ul>
+            <i class="icon fa-solid fa-bars" onclick="openmenu()">menu</i>
         </nav>
         <div class="header-text">
             <p>Web/Game Developer</p>
