@@ -185,7 +185,7 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -265,7 +265,7 @@ nav ul li a:hover::after{
     background: #007afc;
 }
 
-/*-------------------css for small screens-------------------*/
+/*-------------------contact info-------------------*/
 
 .contact-left{
     flex-basis: 35%;
@@ -311,15 +311,24 @@ nav .icon{
         font-size: 30px;
     }
 
+    #sidemenu{
+        z-index: 4;
+    }
+
     nav .icon{
         display: block;
         font-size: 25px;
-        position: relative;
+       /* position: relative; */
     }
 
     nav .icon.open{
-        padding-left: 90%;
-        padding-top: 10%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        padding-top: 30px;
+        padding-left: 75%;
+        
     }
 
     nav .cion.close{
