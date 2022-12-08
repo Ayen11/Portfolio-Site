@@ -243,6 +243,32 @@ nav ul li a:hover::after{
 }
 
 /*-------------------css for small screens-------------------*/
+
+.contact-left{
+    flex-basis: 35%;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 300px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+    height: 50px;
+}
+
+/*-------------------css for small screens-------------------*/
+
 nav .icon{
     display: none;
 }
