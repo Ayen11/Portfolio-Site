@@ -298,9 +298,9 @@ nav .icon{
 
 
 @media only screen and (max-width: 600px){
-    #header{
-        /*background-image: url(/images/phone-background.png);*/
-    }
+    /*#header{
+        background-image: url(/images/phone-background.png);
+    }*/
 
     .header-text{
         margin-top: 100%;
