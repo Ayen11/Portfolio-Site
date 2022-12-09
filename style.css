@@ -325,7 +325,7 @@ nav .icon{
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 3;
+        z-index: 2;
         padding-top: 30px;
         padding-left: 75%;
         
@@ -345,7 +345,7 @@ nav .icon{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 3;
         transition: right 0.5s;
     }
 
