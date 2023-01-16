@@ -23,5 +23,7 @@ var sidemenu = document.getElementById("sidemenu");
     } 
     
     function closemenu(){
+        if (screen.width <= 600) {
         sidemenu.style.right = "-200px";
+        };
     } 
