@@ -278,6 +278,25 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
+
+.contactList{
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.contactList li{
+    display: inline;
+    margin-right: 50px;
+}
+
+.contactList li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-size: 30px;
+}
+
 .contact-left p i{
     color: #007afc;
     margin-right: 15px;
