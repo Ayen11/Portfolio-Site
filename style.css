@@ -1,410 +1,125 @@
-/*
-colors used:
-
-background: #080808
-text default: #fff
-tint: #ff004f
-off color tint:#b54769
-*/
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-body{
-    background: #080808;
-    color: #fff;
+header {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-#header{
-    width: 100%;
-    height: 100vh;
-    /*background-image: url(images/background.png); /* change background image later*/
-    background-size: cover;
-    background-position: center;
+header h1 {
+  margin: 0;
 }
 
-@media only screen and (min-width: 600px){
-
-#sidemenu{
-    padding: 10px;
-    background: #080808;
-    position: fixed;
-    top: 0;
-    width: 110%;
-    z-index: 3;
-    right: -200px;
-}
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-.container{
-    padding: 10px 10%;
-
+.contact-info p {
+  margin: 0;
+  color: #ccc;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.logo{
-    width: 140px;
+.contact-info a:hover {
+  color: #b3b3b3;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+.download-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+.download-button:hover {
+  background-color: #0056b3;
 }
 
-nav ul li a::after{
-    content: "";
-    width: 0; /*start underline un-hovered*/
-    height: 3px;
-    background: #007afc; /*underline color, change later? */
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s; /*transition time and a useless comment :P*/
+.developer-photo {
+  text-align: center;
+  margin-top: 20px;
 }
 
-nav ul li a:hover::after{
-    width: 100%;    /*underline hovered. Can change this transition to vertical with height instead and a constant width*/
+.developer-photo img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.portfolio-item {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header-text h1 span{
-    color: #007afc; /*color text name, change later?*/
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-/*--------------about--------------*/
-
-#about{
-    padding: 80px 0;
-    color: #ababab;
+.portfolio-item h2 {
+  margin: 10px 20px;
+  color: #333;
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.portfolio-item p {
+  margin: 0;
+  color: #666;
+  padding: 0 20px 20px;
+  text-align: justify;
 }
 
-.about-col-1{
-    flex-basis: 35%;
+.portfolio-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
+.portfolio-item a:hover {
+  opacity: 0.8;
 }
 
-.about-col-2{
-    flex-basis: 60%;
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
+.contact-info p {
+  margin: 10px 0; /* Added margin */
+  color: #ccc;
 }
 
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.tab-links{
-    margin-right:50px ;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: "";
-    width: 0;
-    height: 3px;
-    background: #007afc; /*underline color, change later? */
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.3s;
-}
-
-.tab-links.active-link::after{
-    width: 100%;
-}
-
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-contents ul li span{
-    color: #0087a0; /*color text sloghtly less saturated and bright, change later?*/
-    font-size: 18px;
-}
-
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab{
-    display: block;
-}
-
-/*--------------portfolio--------------*/
-
-#portfolio{
-    padding: 50px 0;
-}
-
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.4s;
-}
-
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #007afc); /*color to change later?*/
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 18px;
-    transition: height 0.5s;
-}
-
-.layer h3{
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.layer a{
-    margin-top: 20%;
-    color: #007afc; /*color to change later?*/
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.work:hover .layer{
-    height: 100%;
-}
-
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 4px solid #007afc; /*color to change later?*/
-    padding:  14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
-}
-
-.btn:hover{
-    background: #007afc;
-}
-
-/*-------------------contact info-------------------*/
-
-.contact-left{
-    flex-basis: 35%;
-    font-weight: 500;
-    font-size: 20px;
-    margin-bottom: 300px;
-}
-
-.contact-left p{
-    margin-top: 30px;
-}
-
-
-.contactList{
-    margin-top: 30px;
-    list-style-type: none;
-}
-
-.contactList li{
-    display: inline;
-    margin-right: 50px;
-}
-
-.contactList li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    font-size: 30px;
-}
-
-.contact-left p i{
-    color: #007afc;
-    margin-right: 15px;
-    font-size: 25px;
-}
-
-.btn.btn2{
-    display: inline-block;
-    background: #007afc;
-    height: 50px;
-}
-
-/*-------------------css for small screens-------------------*/
-
-nav .icon{
-    display: none;
-}
-
-
-@media only screen and (max-width: 600px){
-    /*#header{
-        background-image: url(/images/phone-background.png);
-    }*/
-
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-text h1{
-        font-size: 30px;
-    }
-
-    #sidemenu{
-        z-index: 4;
-    }
-
-    nav .icon{
-        display: block;
-        font-size: 25px;
-       /* position: relative; */
-    }
-
-    nav .icon.open{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 2;
-        padding-top: 30px;
-        padding-left: 75%;
-        
-    }
-
-    nav .cion.close{
-        padding-top: 100%;
-    }
-  
-    
-
-    nav ul{
-        background: #007afc; /*color to change later?*/
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 3;
-        transition: right 0.5s;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .icon{
-        position:  absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    .sub-title{
-        font-size: 40px;  
-    }
-
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-
-    .about-col-1{
-        margin-bottom: 30px;
-    }
-
-    .about-col-2{
-        font-size: 14px;
-    }
-
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    }
-
-    .contact-left{
-        margin-bottom: 100px;
-    }
-
-
+.contact-info a:hover {
+  color: #b3b3b3;
 }

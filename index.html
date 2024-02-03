@@ -1,177 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Emanuel NM Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8ac39b48a6.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>C++ Game Developer Portfolio</h1>
+      <div class="contact-info">
+        <p>Email: your.email@example.com</p>
+        <p>
+          GitHub:
+          <a href="https://github.com/yourgithubusername" target="_blank"
+            >YourGitHubUsername</a
+          >
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/yourlinkedinprofile"
+            target="_blank"
+            >YourLinkedInProfile</a
+          >
+        </p>
+        <p>Discord: YourDiscordUsername#1234</p>
+      </div>
+      <a href="resume.pdf" class="download-button">Download Resume</a>
+    </header>
 
-
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <!--<img src="images/logo.png" class="logo">  change logo later -->
-            <ul id="sidemenu">
-                <li><a href="#header" onclick="closemenu()">Home</a></li>
-                <li><a href="#about" onclick="closemenu()">About</a></li>
-                <li><a href="#portfolio" onclick="closemenu()">My Work</a></li>
-                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                <li><i class="icon close fa-regular fa-circle-xmark" onclick="closemenu()"></i></li>
-            </ul>
-            <i class="icon open fa-solid fa-bars" onclick="openmenu()" title="edit"></i>
-        </nav>
-        <div class="header-text">
-            <p>Web/Game Developer</p>
-            <h1 id="maintitle">Heyo! I'm <span>Emanuel</span>,<br>
-                and I make video games and websites.</h1>
-        </div>
+    <div class="developer-photo">
+      <img src="\images\MeSelfie2.png" alt="me" />
     </div>
-</div>
 
-<!--------------about-------------->
+    <main>
+      <section class="portfolio-item">
+        <a href="project1.html">
+          <img src="\images\IdioticPreview2.png" alt="Project 1" />
+          <h2>Project 1</h2>
+          <p>
+            Description of Project 1. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Sed euismod justo sed justo suscipit, sit amet
+            aliquam velit finibus.
+          </p>
+        </a>
+      </section>
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/Me1.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I’m Emanuel. I started coding right before covid started at 2020. At first all I made were simple Twitter/Discord/Reddit bots in Python, 
-                    but when covid hit I wanted to do something bigger.. So I started making games! 
-                    I’ve worked through the 2 years of lockdowns on my first game IDIOTIC (The Game), 
-                    and had some success with it. With a small community of 600 users on Reddit and a viral trailer that got to the top 10 posts on Reddit for that day.
-                    <br><br>
-                    Now I’m mastering new technologies like Unity and Godot and also web development by making web games and websites. 
-                    I’ve already published one web game and made *this* website, and I’m looking forward to making more!
-                    
-                </p>
+      <section class="portfolio-item">
+        <a href="project2.html">
+          <img src="project2.jpg" alt="Project 2" />
+          <h2>Project 2</h2>
+          <p>
+            Description of Project 2. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Sed euismod justo sed justo suscipit, sit amet
+            aliquam velit finibus.
+          </p>
+        </a>
+      </section>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                </div>
-                <!--Skills-->
-                <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span>Game Development</span><br>Developed and published multiple video games as a one man studio.<br>
-                            I've made a 3D movement FPS on my own as my first game, and now I'm also making and selling 2D webgames.</li>
-                        <li><span>Web Development</span><br>Developing websites (like this one!) based on Frontend technology.</li>
-                        <li><span>3D Art</span><br>Modeling, rigging, animating, weight painting.. <br>Everything needed to make video games come to life.</li>
-                        <li><span>2D Art</span><br>Mostly photo-manipulations but I've also made icons and vector art.</li>
-                    </ul>
-                </div>
-                <!--experience-->
-                <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>Idiotic the game</span><br>3D movement fps video game solo developed with unreal engine 4-5 and published to steam. 
-                            Basically I’ve done everything in that game except for the font, the music and some of the textures. I’ve modelled characters for animations. 
-                            Builts pipelines to rig, animate and export them to UE. Programmed the movement, weapons, XP, procedural map generation, Enemy AI systems and more.<br> 
-                            Worked with the player base in realtime on how to create better looking environments (I worked, they gave feedback). 
-                            Recruited and managed playtesting groups. Did market research and recorded and edited trailers and poster art for the game. 
-                            Most viral posts have reached 2.3M views on Gifycat (and 3.4M views on Reddit). This and more was my first ever experience with game development.
-                            </li>
-
-                        <li><span>Red Scarf Platformer</span><br>2D platformer webgame made in godot. I wanted to challenge myself by learning a new language, 
-                            engine and 2D pipelines and publishing a webgame in less than a month.</li>
-
-                        <li><span>Various projects in 2D and 3D</span><br>From poster art for bands, shows and events to architecture 3D previews of buildings in construction.</li>
-                    </ul>
-                </div>
-                <!--education-->
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>Entirely Self Taught</span><br>Through trial and error and whatever sources I could find online.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--------------Portfolio-------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/IdioticPreview2.jpg.png"> <!--Edit image here-->
-                <div class="layer">
-                <h3>IDIOTIC (The Game)</h3>
-                <p>Solo developed and published on Steam</p>
-                <a href="https://store.steampowered.com/app/1746520/IDIOTIC_The_Game/" target="_blank"><i class="fas fa-solid fa-link"></i></a> <!--add link instead of #. 
-                    the class is for the link icon fromfontawesome.com-->
-                </div>
-            </div> 
-            <div class="work">
-                <img src="images/RedScarfPreview.png"> <!--Edit image here-->
-                <div class="layer">
-                    <h3>Red Scarf Platformer</h3>
-                    <p>Solo developed and sold to ArmorGames</p>
-                    <a href="https://armorgames.com/red-scarf-platformer-game/19300" target="_blank"><i class="fas fa-solid fa-link"></i></a> <!--add link instead of #. 
-                        the class is for the link icon fromfontawesome.com-->
-                    </div>
-            </div>
-            <div class="work">
-                <img src="images/ArtPreview.png"> <!--Edit image here-->
-                <div class="layer">
-                    <h3>My 2D/3D Highlights</h3>
-                    <p>Highlights of other projects I've done</p>
-                    <a href="gallery.html" target="_blank"><i class="fas fa-solid fa-link"></i></a> <!--add link instead of #. 
-                        the class is for the link icon fromfontawesome.com-->
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/ThumbnailTut.png"> <!--Edit image here-->
-                <div class="layer">
-                    <h3>UE5 Youtube Tutorial</h3>
-                    <p>A UE5 tutorial I made about key and axis rebinding in blueprints</p>
-                    <a href="https://www.youtube.com/watch?v=OdbTsDc3pC8" target="_blank"><i class="fas fa-solid fa-link"></i></a> <!--add link instead of #. 
-                        the class is for the link icon fromfontawesome.com-->
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/BioPunkWebsitePreview.png"> <!--Edit image here-->
-                <div class="layer">
-                    <h3>Promotional Website</h3>
-                    <p>A promotional website I made for the game BioPunk</p>
-                    <a href="https://biopunk.games/" target="_blank"><i class="fas fa-solid fa-link"></i></a> <!--add link instead of #. 
-                        the class is for the link icon fromfontawesome.com-->
-                </div>
-            </div>
-        </div>
-       <!--<a href="#" class="btn">See More</a> -->
-    </div>
-</div>
-
-<!--------------Contact-------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>emanuel504@gmail.com</p>
-                <p>(+972) 52-2623264</p>
-                <ul class="contactList">
-                <li><a href="https://www.linkedin.com/in/emanuel-nm/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Ayen11" target="_blank" ><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://twitter.com/That_Ayen" target="_blank" ><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-            </div>
-            <a href="images/Emanuel N.M - Resume - Gamedev.pdf" target="_blank" class="btn btn2">Download CV</a>
-        </div>
-    </div>
-</div>
-
-
-<script src="script.js"></script>
-
-</body>
+      <!-- Add more portfolio items as needed -->
+    </main>
+  </body>
 </html>
