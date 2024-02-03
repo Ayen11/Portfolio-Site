@@ -22,7 +22,7 @@ header h1 {
 }
 
 .contact-info p {
-  margin: 0;
+  margin: 5px 0;
   color: #ccc;
 }
 
@@ -47,6 +47,28 @@ header h1 {
 
 .download-button:hover {
   background-color: #0056b3;
+}
+
+.developer-info {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.developer-description {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding */
+}
+
+.developer-description h2 {
+  margin: 20px 0;
+  color: #333;
+}
+
+.developer-description p {
+  margin: 0;
+  color: #666;
+  text-align: left;
 }
 
 .developer-photo {
@@ -102,24 +124,4 @@ main {
 
 .portfolio-item a:hover {
   opacity: 0.8;
-}
-
-.contact-info {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.contact-info p {
-  margin: 10px 0; /* Added margin */
-  color: #ccc;
-}
-
-.contact-info a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-info a:hover {
-  color: #b3b3b3;
 }
