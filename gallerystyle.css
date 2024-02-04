@@ -75,11 +75,13 @@ main {
   width: 300px;
   height: auto;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .gallery-item h3 {
   margin: 10px 0 0;
   color: #333;
+  max-width: 300px;
   font-size: 14px;
   word-wrap: break-word; /* Wrap text to a new line if it exceeds the width of the container */
 }
