@@ -34,6 +34,7 @@ header {
   cursor: pointer;
   border-radius: 5px;
   margin-right: auto; /* Pushes the button to the left */
+  margin-bottom: auto;
 }
 
 .back-button:hover {
@@ -44,6 +45,8 @@ header h2 {
   margin: 0;
   /* display: inline-block; /* Ensures "Gallery" text is on the same line as the back button */
   flex-grow: 1; /* Allow the header text to grow and fill the space */
+  font-size: 35px;
+  margin-right: 6%; /*idk this makes it look centered*/
 }
 
 /* Gallery styles */
@@ -124,6 +127,7 @@ main {
   header {
     flex-direction: column;
     align-items: center;
+    height: 50px;
   }
 
   .back-button {
