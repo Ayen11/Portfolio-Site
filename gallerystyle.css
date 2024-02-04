@@ -141,6 +141,7 @@ main {
     order: -1; /* Ensure the "Gallery" text comes before the back button in the layout */
     display: inline-block;
     font-size: xx-large;
+    margin-right: 4%; /*idk this makes it look centered*/
   }
 
   main {
