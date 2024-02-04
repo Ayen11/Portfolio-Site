@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Emanuel NM Portfolio - Gallery</title>
-    <link rel="stylesheet" href="gallerystyle.css">
-    <script src="https://kit.fontawesome.com/8ac39b48a6.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div class="header">
-    <h3><span>Emanuel's</span> 2D/3D Highlights</h3>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallerystyle.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="back-button">&lt; Back</a>
+      <h2>Gallery</h2>
+    </header>
 
-<div class="gallery">
-    <div class="container">
-        <img src="images/PhotoshopImages/EmanuelNM-7.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-2.jpg">
-        <img class="wide" src="images/PhotoshopImages/EmanuelNM-17.jpg">
-        <img class="wide" src="images/PhotoshopImages/EmanuelNM-18.jpg">
-        <img class="wide" src="images/PhotoshopImages/EmanuelNM-14.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-10.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-6.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-8.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-5.jpg">
-        <img class="wide" src="images/PhotoshopImages/EmanuelNM-12.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-13.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-4.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-11.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-16.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-3.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-15.jpg">
-        <img src="images/PhotoshopImages/EmanuelNM-1.jpg">
+    <main>
+      <section class="gallery-item">
+        <img src="images/PhotoshopImages/EmanuelNM-13.jpg" alt="Image 1" />
+        <h3>
+          Key art for a poster for a theatre show about online dating. aaaa
+          aaaaaa aaaaaaa a a a a a a a
+        </h3>
+      </section>
+
+      <section class="gallery-item">
+        <img src="images/image2.jpg" alt="Image 2" />
+        <h3>Description for Image 2</h3>
+      </section>
+
+      <!-- Add more images and descriptions as needed -->
+    </main>
+
+    <!-- Fullscreen image overlay -->
+    <div id="overlay">
+      <div id="overlay-image-container">
+        <span id="close-button">&times;</span>
+        <img id="overlay-image" src="" alt="" />
+      </div>
     </div>
-</div>
 
-</body>
-
-<!--        
-    <div class="image">
-            <div class="image__img"><img src="/images/PhotoshopImages/EmanuelNM-1.jpg"></div>
-            <div class="image__overlay">
-                <div class="image__title">title</div>
-                <p class="image__description">
-                    aaaaaaaaaa.
-                </p>
-            </div>
-        </div>
-    -->
+    <script src="galleryscript.js"></script>
+  </body>
+</html>

@@ -1,107 +1,154 @@
-*{
-    font-family: 'Poppins', sans-serif;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-body{
-    background-color: rgb(0, 0, 0); 
+/* Header styles */
+header {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Spacing between items */
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top of the screen */
+  width: 100%; /* Take up full width of the screen */
+  z-index: 1000; /* Ensure the header stays above other content */
+  transition: top 0.3s; /* Add smooth transition */
 }
 
-.gallery{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: auto; /* Pushes the button to the left */
 }
 
-.header{
-    color: #fff;
-    justify-content: center;
-    display: flex;
-    font-size: 40px;
+.back-button:hover {
+  background-color: #0056b3;
 }
 
-.header span{
-    color: #007afc;
+header h2 {
+  margin: 0;
+  /* display: inline-block; /* Ensures "Gallery" text is on the same line as the back button */
+  flex-grow: 1; /* Allow the header text to grow and fill the space */
 }
 
-.container{
-    display: flex;
-    /*max-width: 2000px;*/
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Gallery styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 60px;
 }
 
-img{
-    max-width: 500px;
-    min-width: 100px;
-    height: auto;
-    object-fit: scale-down;
-    object-position: bottom;
-    padding: 15px;
-    overflow: hidden;
-    border-radius: 5px;
+.gallery-item {
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-img.wide{
-    max-width: 2000px;
-    min-width: 100px;
-    height: auto;
-    order: -1;
-}
-/*
-img:hover{
-    cursor: pointer;
-    opacity: 50%;
-    transition: opacity 0.5s;
-}
-*/
-
-.image{
-    position: relative;
+.gallery-item:hover {
+  transform: scale(1.05);
 }
 
-.image__img{
-    display: block;
-    width: 100%;
+.gallery-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.image__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
+.gallery-item h3 {
+  margin: 10px 0 0;
+  color: #333;
+  font-size: 14px;
+  word-wrap: break-word; /* Wrap text to a new line if it exceeds the width of the container */
+}
+
+/* Overlay styles */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+#overlay-content {
+  text-align: center;
+}
+
+#overlay-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 600px) {
+  header {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-    overflow: hidden;
-}
+  }
 
-.image__title{
-    font-size: 2em;
-    font-weight: bold;
-}
+  .back-button {
+    margin-top: 10px; /* Add margin to push button down */
+    margin-bottom: 10px; /* Add margin to separate button from text */
+    display: inline-block;
+  }
 
-.imgage__description{
-    font-size: 1.25em;
-    margin-top: 0.25em;
-}
+  header h2 {
+    margin: 10px 0; /* Add margin to center text */
+    order: -1; /* Ensure the "Gallery" text comes before the back button in the layout */
+    display: inline-block;
+  }
 
-.image__overlay:hover{
-    opacity: 1;
-}
+  main {
+    padding: 10px;
+    padding-top: 130px;
+  }
 
+  .gallery-item {
+    width: calc(100% - 40px);
+  }
 
-@media only screen and (max-width: 600px){
+  .gallery-item img {
+    width: 100%;
+  }
 
-    .header{
-        font-size: 17px;
-    }
-
+  .gallery-item h3 {
+    font-size: 12px;
+  }
 }
