@@ -136,6 +136,7 @@ main {
     margin: 10px 0; /* Add margin to center text */
     order: -1; /* Ensure the "Gallery" text comes before the back button in the layout */
     display: inline-block;
+    font-size: xx-large;
   }
 
   main {
@@ -152,7 +153,7 @@ main {
   }
 
   .gallery-item h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   /* Overlay styles */
