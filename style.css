@@ -247,6 +247,54 @@ main {
   border-top: 1px solid var(--border);
 }
 
+/* ---- GALLERY CARD ---- */
+
+.grid-divider {
+  grid-column: 1 / -1;
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 12px 0 0;
+}
+
+.card--gallery {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 40px;
+}
+
+.card--gallery .card-image {
+  width: 320px;
+  flex-shrink: 0;
+  aspect-ratio: unset;
+}
+
+.card--gallery .card-body {
+  justify-content: center;
+  padding: 28px 32px;
+}
+
+.card--gallery .card-body h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card--gallery .card-body p {
+  font-size: 14px;
+  max-width: 480px;
+}
+
+@media (max-width: 600px) {
+  .card--gallery {
+    flex-direction: column;
+    margin-top: 28px;
+  }
+
+  .card--gallery .card-image {
+    width: 100%;
+  }
+}
+
 /* ---- OVERLAY ---- */
 
 #overlay {
