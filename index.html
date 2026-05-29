@@ -4,160 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emanuel N.M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Emanuel N.M</h1>
-      <div class="contact-info">
-        <p>Emanuel504@gmail.com</p>
-        <p>
+    <nav>
+      <div class="nav-inner">
+        <span class="nav-logo">E.N.M</span>
+        <div class="nav-links">
+          <a href="mailto:Emanuel504@gmail.com">Email</a>
           <a href="https://github.com/Ayen11" target="_blank">GitHub</a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/emanuel-nm/" target="_blank"
-            >Linkedin</a
-          >
-        </p>
+          <a href="https://www.linkedin.com/in/emanuel-nm/" target="_blank">LinkedIn</a>
+          <button id="open-image-btn">Share QR</button>
+        </div>
       </div>
-      <!-- <div class="button-container">
-        <a
-          href="images/Emanuel N.M Resume .pdf"
-          target="_blank"
-          class="download-button"
-          >Download Resume</a
-        > -->
-        <button id="open-image-btn">Share QR</button>
-        <!-- Button to open image in overlay -->
-      </div>
-    </header>
+    </nav>
 
-    <div class="developer-photo">
-      <img src="images\Me3Edited.png" alt="me" />
-    </div>
-
-    <div class="developer-info">
-      <div class="developer-description">
-        <h2>Emanuel Nevo Mey Bar</h2>
-        <p>
-          Game Developer | Passionate about crafting immersive experiences |
-          Proficient in Unreal Engine & Godot | From solo projects to team
-          leadership | Thrives on solving challenges and bringing ideas to life.
-        </p>
+    <section class="hero">
+      <div class="hero-inner">
+        <img src="images/New_Profile.jpg" alt="Emanuel N.M" class="profile-photo" />
+        <div class="hero-text">
+          <h1>Emanuel Nevo<br />Mey Bar</h1>
+          <p class="hero-role">Game Developer &amp; Creative Technologist</p>
+          <p class="hero-bio">Passionate about crafting immersive experiences — proficient in Unreal Engine &amp; Godot, from solo indie games to team leadership. Thrives on solving challenges and bringing ideas to life.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <main>
-      <section class="portfolio-item">
-        <a
-          href="https://store.steampowered.com/app/1746520/IDIOTIC_The_Game/"
-          target="_blank">
-          <img src="images/IdioticPreview2.png" alt="Idiotic preview" />
-          <h2>Idiotic The Game</h2>
-          <p>
-            My first game, solo made and published on Steam. During the
-            development I taught myself Unreal Engine 4/5 and Blender.
-          </p>
-        </a>
-      </section>
+      <div class="section-header">
+        <h2>Selected Work</h2>
+      </div>
+      <div class="grid">
 
-      <section class="portfolio-item">
-        <a
-          href="https://armorgames.com/red-scarf-platformer-game/19300"
-          target="_blank">
-          <img src="images/RedScarfPreview.png" alt="Red scarf preview" />
-          <h2>Red Scarf Platformer</h2>
-          <p>
-            A personal project made to learn Godot. Made in 2 weeks and
-            published to Armor Games with 26K plays at time of writing.
-          </p>
+        <a class="card" href="https://store.steampowered.com/app/1746520/IDIOTIC_The_Game/" target="_blank">
+          <div class="card-image">
+            <img src="images/IdioticHeader.jpg" alt="Idiotic preview" />
+          </div>
+          <div class="card-body">
+            <h3>Idiotic The Game</h3>
+            <p>My first game, solo made and published on Steam. During development I taught myself Unreal Engine 4/5 and Blender.</p>
+            <span class="card-tag">Steam</span>
+          </div>
         </a>
-      </section>
 
-      <section class="portfolio-item">
-        <a href="#">
-          <img src="images/FuelInkPrevSmall.png" alt="Fuel Ink preview" />
-          <h2>Fuel Ink</h2>
-          <p>
-            A 15 man studio I joined to as a consultant and later on as
-            Director/Producer for a year. I organized the team and set up a
-            pipeline for pre-production.
-          </p>
+        <a class="card" href="https://armorgames.com/red-scarf-platformer-game/19300" target="_blank">
+          <div class="card-image">
+            <img src="images/RedScarfPreview.png" alt="Red Scarf preview" />
+          </div>
+          <div class="card-body">
+            <h3>Red Scarf Platformer</h3>
+            <p>A personal project made to learn Godot. Made in 2 weeks and published to Armor Games with 26K plays.</p>
+            <span class="card-tag">Armor Games</span>
+          </div>
         </a>
-      </section>
 
-      <section class="portfolio-item">
-        <a
-          href="https://globalgamejam.org/games/2024/jeinfeld-7"
-          target="_blank">
-          <img src="images/JeinFeldCropped.png" alt="Jeinfeld preview" />
-          <h2>Jeinfeld</h2>
-          <p>
-            My first Gamejam at the Global Game Jam done in 48 hours at IAC with
-            a team of 11 developers using Unity and Blender.
-          </p>
+        <a class="card" href="#">
+          <div class="card-image">
+            <img src="images/FuelInkPrev.png" alt="Fuel Ink preview" />
+          </div>
+          <div class="card-body">
+            <h3>Fuel Ink</h3>
+            <p>A 15-person studio I joined as a consultant and later as Director/Producer for a year. Organized the team and built a pre-production pipeline.</p>
+            <span class="card-tag">Studio</span>
+          </div>
         </a>
-      </section>
 
-      <section class="portfolio-item">
-        <a
-          href="https://www.youtube.com/playlist?list=PLeyBti4kPK4_LA9QdQy52xl3piuqxisWM"
-          target="_blank">
-          <img
-            src="images/UnrealSequencerCropped.png"
-            alt="Unreal Sequencer preview" />
-          <h2>Unreal Engine Sequencer Works</h2>
-          <p>
-            A short Youtube playlist of videos I made using Unreal Engine
-            Sequencer and Premiere.
-          </p>
+        <a class="card" href="https://globalgamejam.org/games/2024/jeinfeld-7" target="_blank">
+          <div class="card-image">
+            <img src="images/JeinFeld.png" alt="Jeinfeld preview" />
+          </div>
+          <div class="card-body">
+            <h3>Jeinfeld</h3>
+            <p>My first Game Jam at Global Game Jam — 48 hours at IAC with a team of 11 developers using Unity and Blender.</p>
+            <span class="card-tag">Game Jam</span>
+          </div>
         </a>
-      </section>
 
-      <section class="portfolio-item">
-        <a
-          href="https://www.youtube.com/playlist?list=PLeyBti4kPK4-inWoUPMFt2I69SmMbHCI2"
-          target="_blank">
-          <img src="images/ThumbnailTut.png" alt="Tutorial Thumbnail preview" />
-          <h2>Unreal Engine Youtube Tutorials</h2>
-          <p>
-            A Youtube playlist of all the tutorials I made so far about unreal
-            engine, focused mainly on blueprints
-          </p>
+        <a class="card" href="https://www.youtube.com/playlist?list=PLeyBti4kPK4_LA9QdQy52xl3piuqxisWM" target="_blank">
+          <div class="card-image">
+            <img src="images/UnrealSequencer.png" alt="Unreal Sequencer preview" />
+          </div>
+          <div class="card-body">
+            <h3>Unreal Engine Sequencer Works</h3>
+            <p>A YouTube playlist of cinematic sequences made using Unreal Engine Sequencer and Premiere.</p>
+            <span class="card-tag">YouTube</span>
+          </div>
         </a>
-      </section>
 
-      <section class="portfolio-item">
-        <a href="https://github.com/Ayen11/Time-API" target="_blank">
-          <img src="images/CPPAPITimeCropped.png" alt="CPP API preview" />
-          <h2>C++ Time API Implementation in Unreal Engine</h2>
-          <p>
-            A personal project practcing working with HTTP calls and using an
-            API in Unreal Engine.
-          </p>
+        <a class="card" href="https://www.youtube.com/playlist?list=PLeyBti4kPK4-inWoUPMFt2I69SmMbHCI2" target="_blank">
+          <div class="card-image">
+            <img src="images/GeoCacheTutThumbnail.png" alt="Tutorial Thumbnail preview" />
+          </div>
+          <div class="card-body">
+            <h3>Unreal Engine YouTube Tutorials</h3>
+            <p>A YouTube playlist of tutorials focused on Unreal Engine blueprints.</p>
+            <span class="card-tag">YouTube</span>
+          </div>
         </a>
-      </section>
 
-      <section class="portfolio-item">
-        <a href="gallery.html">
-          <img src="images/ArtPreview.png" alt="Art Preview" />
-          <h2>Other Projects</h2>
-          <p>
-            Before and while being a game dev I did various work in Photoshop
-            and Blender. Including designing posters and 3D previews of
-            buildings based on architectural schematics.
-          </p>
+        <a class="card" href="https://github.com/Ayen11/Time-API" target="_blank">
+          <div class="card-image">
+            <img src="images/CPPAPITime.png" alt="C++ API preview" />
+          </div>
+          <div class="card-body">
+            <h3>C++ Time API in Unreal Engine</h3>
+            <p>A personal project practicing HTTP calls and using an external API inside Unreal Engine.</p>
+            <span class="card-tag">GitHub</span>
+          </div>
         </a>
-      </section>
 
-      <!--place to add more projects-->
+        <a class="card" href="gallery.html">
+          <div class="card-image">
+            <img src="images/ArtPreview.png" alt="Art Preview" />
+          </div>
+          <div class="card-body">
+            <h3>Other Projects</h3>
+            <p>Photoshop and Blender work — posters, 3D architectural previews, fan art, and creative personal projects.</p>
+            <span class="card-tag">Gallery</span>
+          </div>
+        </a>
+
+      </div>
     </main>
 
-    <!-- Overlay for displaying image -->
     <div id="overlay">
       <div id="overlay-content">
         <span id="close-button">&times;</span>
-        <img id="overlay-image" src="images/PortfolioQR.png" alt="" />
+        <img id="overlay-image" src="images/PortfolioQR.png" alt="QR Code" />
       </div>
     </div>
 
