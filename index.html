@@ -37,121 +37,7 @@
       <div class="section-header">
         <h2>Selected Work</h2>
       </div>
-      <div class="grid">
-
-        <a class="card" href="https://store.steampowered.com/app/2330060/You_Are_Speed/" target="_blank">
-          <div class="card-image">
-            <img src="images/PhotoshopImages/TemplateCapsules-PageBackground.png" alt="You Are Speed preview" />
-          </div>
-          <div class="card-body">
-            <h3>You Are Speed</h3>
-            <p>A solo-made speedrunning game I built to celebrate my 25th birthday, featuring handcrafted levels, an advanced movement system, and personal storytelling narrated by me across each stage. A personal project to test my level design and narrative design capabilities.</p>
-            <span class="card-tag">Steam</span>
-          </div>
-        </a>
-
-        <a class="card" href="https://www.capriciaproductions.com/" target="_blank">
-          <div class="card-image">
-            <img src="images/Capricia2Wide.png" alt="Capricia Productions" />
-          </div>
-          <div class="card-body">
-            <h3>Programmer at Capricia Productions</h3>
-            <p>A game studio I joined as a Programmer and Product Contributor, coordinating between art, design, and engineering teams. Prototyped features, standardized technical documentation, and provided cross-team implementation support.</p>
-            <span class="card-tag">Studio</span>
-          </div>
-        </a>
-
-        <a class="card" href="#">
-          <div class="card-image">
-            <img src="images/FuelInkPrev.png" alt="Fuel Ink preview" />
-          </div>
-          <div class="card-body">
-            <h3>Fuel Ink</h3>
-            <p>A 15-person studio where I served as Product Manager and Director, delivering a playable demo in four months. Built Agile workflows, recruited the team, and aligned stakeholder expectations with realistic goals.</p>
-            <span class="card-tag">Studio</span>
-          </div>
-        </a>
-
-        <a class="card" href="https://armorgames.com/red-scarf-platformer-game/19300" target="_blank">
-          <div class="card-image">
-            <img src="images/RedScarfPreview.png" alt="Red Scarf preview" />
-          </div>
-          <div class="card-body">
-            <h3>Red Scarf Platformer</h3>
-            <p>An indie platformer I founded and shipped solo, reaching 30,000+ players. Built the full experience in Godot from scratch and negotiated a post-release selling contract.</p>
-            <span class="card-tag">Armor Games</span>
-          </div>
-        </a>        
-
-        <a class="card" href="https://store.steampowered.com/app/1746520/IDIOTIC_The_Game/" target="_blank">
-          <div class="card-image">
-            <img src="images/IdioticHeader.jpg" alt="Idiotic preview" />
-          </div>
-          <div class="card-body">
-            <h3>Idiotic The Game</h3>
-            <p>An indie game I independently designed, programmed, and marketed over two years to a Steam release, accumulating over 4 million trailer views. Managed QA, iterated on user feedback, and owned the full product lifecycle.</p>
-            <span class="card-tag">Steam</span>
-          </div>
-        </a>
-
-        <a class="card" href="https://globalgamejam.org/games/2024/jeinfeld-7" target="_blank">
-          <div class="card-image">
-            <img src="images/JeinFeld.png" alt="Jeinfeld preview" />
-          </div>
-          <div class="card-body">
-            <h3>Jeinfeld</h3>
-            <p>My first Game Jam at Global Game Jam — 48 hours at IAC with a team of 11 developers using Unity and Blender.</p>
-            <span class="card-tag">Game Jam</span>
-          </div>
-        </a>
-
-        <a class="card" href="https://www.youtube.com/playlist?list=PLeyBti4kPK4_LA9QdQy52xl3piuqxisWM" target="_blank">
-          <div class="card-image">
-            <img src="images/UnrealSequencer.png" alt="Unreal Sequencer preview" />
-          </div>
-          <div class="card-body">
-            <h3>Unreal Engine Sequencer Works</h3>
-            <p>A YouTube playlist of cinematic sequences made using Unreal Engine Sequencer and Premiere.</p>
-            <span class="card-tag">YouTube</span>
-          </div>
-        </a>
-
-        <a class="card" href="https://www.youtube.com/playlist?list=PLeyBti4kPK4-inWoUPMFt2I69SmMbHCI2" target="_blank">
-          <div class="card-image">
-            <img src="images/GeoCacheTutThumbnail.png" alt="Tutorial Thumbnail preview" />
-          </div>
-          <div class="card-body">
-            <h3>Unreal Engine YouTube Tutorials</h3>
-            <p>A YouTube playlist of tutorials focused on Unreal Engine blueprints.</p>
-            <span class="card-tag">YouTube</span>
-          </div>
-        </a>
-
-        <a class="card" href="https://github.com/Ayen11/Time-API" target="_blank">
-          <div class="card-image">
-            <img src="images/CPPAPITime.png" alt="C++ API preview" />
-          </div>
-          <div class="card-body">
-            <h3>C++ Time API in Unreal Engine</h3>
-            <p>A personal project practicing HTTP calls and using an external API inside Unreal Engine.</p>
-            <span class="card-tag">GitHub</span>
-          </div>
-        </a>
-
-        <hr class="grid-divider" />
-
-        <a class="card card--gallery" href="gallery.html">
-          <div class="card-image">
-            <img src="images/ArtPreview.png" alt="Art Preview" />
-          </div>
-          <div class="card-body">
-            <h3>Other Projects</h3>
-            <p>Photoshop and Blender work — posters, 3D architectural previews, fan art, and creative personal projects.</p>
-            <span class="card-tag">Gallery</span>
-          </div>
-        </a>
-
-      </div>
+      <div class="grid" id="works-grid"></div>
     </main>
 
     <div id="overlay">
@@ -161,6 +47,23 @@
       </div>
     </div>
 
+    <div id="work-overlay">
+      <div id="work-overlay-content">
+        <span id="work-close-button">&times;</span>
+        <div id="work-modal-body">
+          <div id="work-modal-text">
+            <h3 id="work-modal-title"></h3>
+            <a id="work-modal-link" href="#" target="_blank"></a>
+            <p id="work-modal-desc"></p>
+          </div>
+          <div id="work-modal-image-wrap">
+            <img id="work-modal-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="works.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
