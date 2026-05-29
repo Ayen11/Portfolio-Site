@@ -43,15 +43,24 @@ document.addEventListener("DOMContentLoaded", function () {
   renderWorks();
 
   var copyEmailBtn = document.getElementById("copy-email-btn");
+  var copyEmailBtnFooter = document.getElementById("copy-email-btn-footer");
   var toast = document.getElementById("toast");
   var toastTimer;
 
-  copyEmailBtn.addEventListener("click", function () {
+  function copyEmail() {
     navigator.clipboard.writeText("Emanuel504@gmail.com").then(function () {
       clearTimeout(toastTimer);
       toast.classList.add("visible");
       toastTimer = setTimeout(function () { toast.classList.remove("visible"); }, 2500);
     });
+  }
+
+  copyEmailBtn.addEventListener("click", copyEmail);
+  copyEmailBtnFooter.addEventListener("click", copyEmail);
+
+  var contactScrollBtn = document.getElementById("contact-scroll-btn");
+  contactScrollBtn.addEventListener("click", function () {
+    document.getElementById("mobile-footer").scrollIntoView({ behavior: "smooth" });
   });
 
   var overlay = document.getElementById("overlay");

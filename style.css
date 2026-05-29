@@ -78,7 +78,8 @@ nav {
   color: var(--text);
 }
 
-#copy-email-btn {
+#copy-email-btn,
+#contact-scroll-btn {
   font-family: var(--font);
   font-size: 13px;
   font-weight: 400;
@@ -90,8 +91,13 @@ nav {
   transition: color 0.2s;
 }
 
-#copy-email-btn:hover {
+#copy-email-btn:hover,
+#contact-scroll-btn:hover {
   color: var(--text);
+}
+
+#contact-scroll-btn {
+  display: none;
 }
 
 #toast {
@@ -486,6 +492,50 @@ main {
   }
 }
 
+/* ---- MOBILE FOOTER ---- */
+
+.mobile-footer {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 20px 20px 36px;
+    border-top: 1px solid var(--border);
+  }
+
+  .mobile-footer a {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .mobile-footer a:hover {
+    color: var(--text);
+  }
+
+  #copy-email-btn-footer {
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  #copy-email-btn-footer:hover {
+    color: var(--text);
+  }
+}
+
 /* ---- RESPONSIVE ---- */
 
 @media (max-width: 900px) {
@@ -501,6 +551,15 @@ main {
 
   .nav-links a {
     display: none;
+  }
+
+  #copy-email-btn {
+    display: none;
+  }
+
+  #contact-scroll-btn {
+    display: inline;
+    color: var(--text-secondary);
   }
 
   .hero {
