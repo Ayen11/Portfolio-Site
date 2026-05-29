@@ -7,14 +7,14 @@ const works = [
     image: "images/PhotoshopImages/TemplateCapsules-PageBackground.png",
   },
   {
-    title: "Programmer at Capricia Productions",
+    title: "Programmer At Capricia Productions",
     description: "A game studio I joined as a Programmer and Product Contributor, coordinating between art, design, and engineering teams. Prototyped features, standardized technical documentation, and provided cross-team implementation support.",
     tag: "Studio",
     link: "https://www.capriciaproductions.com/",
     image: "images/Capricia2Wide.png",
   },
   {
-    title: "Fuel Ink",
+    title: "Director At Fuel Ink",
     description: "A 15-person studio where I served as Product Manager and Director, delivering a playable demo in four months. Built Agile workflows, recruited the team, and aligned stakeholder expectations with realistic goals.",
     tag: "Studio",
     link: "#",
