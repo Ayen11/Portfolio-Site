@@ -132,13 +132,27 @@ main {
 
 #overlay-image-container {
   position: relative;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 92vh;
+  overflow-y: auto;
 }
 
 #overlay-image {
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 75vh;
   border-radius: 10px;
+  flex-shrink: 0;
+}
+
+#overlay-caption {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 16px 8px 4px;
+  max-width: min(90vw, 600px);
+  text-align: center;
 }
 
 #close-button {
