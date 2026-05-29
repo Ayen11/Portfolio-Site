@@ -42,6 +42,18 @@ function renderWorks() {
 document.addEventListener("DOMContentLoaded", function () {
   renderWorks();
 
+  var copyEmailBtn = document.getElementById("copy-email-btn");
+  var toast = document.getElementById("toast");
+  var toastTimer;
+
+  copyEmailBtn.addEventListener("click", function () {
+    navigator.clipboard.writeText("Emanuel504@gmail.com").then(function () {
+      clearTimeout(toastTimer);
+      toast.classList.add("visible");
+      toastTimer = setTimeout(function () { toast.classList.remove("visible"); }, 2500);
+    });
+  });
+
   var overlay = document.getElementById("overlay");
   var overlayImage = document.getElementById("overlay-image");
   var closeButton = document.getElementById("close-button");
