@@ -56,7 +56,7 @@ const works = [
     image: "images/GeoCacheTutThumbnail.png",
   },
   {
-    title: "C++ Time API in Unreal Engine",
+    title: "C++ Time API In Unreal Engine",
     description: "A personal project practicing HTTP calls and using an external API inside Unreal Engine.",
     tag: "GitHub",
     link: "https://github.com/Ayen11/Time-API",
