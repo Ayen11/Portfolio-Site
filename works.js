@@ -7,6 +7,13 @@ const works = [
     image: "images/PhotoshopImages/TemplateCapsules-PageBackground.png",
   },
   {
+    title: "Tick Talk — Unreal Engine Tick Documentation",
+    description: "Research I conducted at Capricia Productions and added to their internal documentation — covering Unreal Engine's Tick system, delta time, tick groups, substepping, and performance optimization. Shared with permission.",
+    tag: "GitHub",
+    link: "https://github.com/Ayen11/Tick-Talk",
+    image: "images/Substepping-Timelines-1-615x402.png",
+  },
+  {
     title: "Programmer At Capricia Productions",
     description: "A game studio I joined as a Programmer and Product Contributor, coordinating between art, design, and engineering teams. Prototyped features, standardized technical documentation, and provided cross-team implementation support.",
     tag: "Studio",
